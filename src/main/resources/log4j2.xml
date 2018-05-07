@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+
+        <!--<File name="FileAppender" fileName="D:/logs/app.log">-->
+            <!--<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />-->
+        <!--</File>-->
+    </Appenders>
+
+    <Loggers>
+        <!-- 指定日志 additivity是否表示向上级传播，true 日志会打印多次-->
+        <Logger name="MainApp" level="debug" additivity="false">
+            <AppenderRef ref="Console" />
+        </Logger>
+
+        <!--默认日志-->
+        <Root level="info">
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
+</Configuration>
