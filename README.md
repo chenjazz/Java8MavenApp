@@ -1,6 +1,5 @@
 用于快速搭建基于maven的java8应用，提供了一些常用依赖。
 
-
 # 使用
 ``` 
 git clone https://github.com/chenjazz/Java8MavenApp.git
